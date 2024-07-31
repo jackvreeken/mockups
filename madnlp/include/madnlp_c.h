@@ -115,6 +115,9 @@ struct MadnlpCStats {
   double primal_feas;
 };
 
+MADNLP_SYMBOL_EXPORT int init_julia(int, char**);
+MADNLP_SYMBOL_EXPORT void shutdown_julia(int);
+
 MADNLP_SYMBOL_EXPORT struct MadnlpCSolver* madnlp_c_create(struct MadnlpCInterface* nlp_interface);
 
 MADNLP_SYMBOL_EXPORT const struct MadnlpCNumericIn* madnlp_c_input(struct MadnlpCSolver*);
