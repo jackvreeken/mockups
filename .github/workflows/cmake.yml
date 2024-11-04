@@ -64,7 +64,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        image: [macos-m1,macos-12,macos-14]
+        image: [macos-m1,macos-12,macos-13,macos-14]
         BUILD_TYPE: [Release,Debug]
     steps:
       - uses: actions/checkout@v3.3.0
