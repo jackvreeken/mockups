@@ -15,7 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        arch: [manylinux2014-x64,windows-shared-x64-posix,manylinux_2_28,manylinux_2_34]
+        arch: [manylinux2014-x64,windows-shared-x64-posix,manylinux_2_28-x64,manylinux_2_34-x64]
         BUILD_TYPE: [Release,Debug]
     steps:
       - uses: actions/checkout@v4
